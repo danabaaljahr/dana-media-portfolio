@@ -412,3 +412,89 @@ footer{
     transform:none!important;
   }
 }
+
+
+/* Vertical videos: display the full 9:16 frame without cropping */
+.video-grid .portrait-video{
+  width:100%;
+  max-width:460px;
+  justify-self:center;
+  align-self:start;
+}
+
+.video-grid .portrait-video video{
+  width:100%;
+  height:auto;
+  max-height:760px;
+  aspect-ratio:9 / 16;
+  object-fit:contain;
+  object-position:center;
+  background:#000;
+}
+
+@media(max-width:700px){
+  .video-grid .portrait-video{
+    max-width:100%;
+  }
+
+  .video-grid .portrait-video video{
+    max-height:none;
+    aspect-ratio:9 / 16;
+  }
+}
+
+
+/* ===== Definitive portrait-video fix ===== */
+.video-grid .portrait-video{
+  width:min(100%, 430px) !important;
+  max-width:430px !important;
+  justify-self:center !important;
+  align-self:start !important;
+}
+
+.video-grid .portrait-video video{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  background:#000 !important;
+  border-radius:12px !important;
+}
+
+/* Prevent cropping when the user opens a portrait video in fullscreen */
+.video-grid .portrait-video video:fullscreen,
+.video-grid .portrait-video video:-webkit-full-screen,
+.video-grid .portrait-video video:-moz-full-screen{
+  width:100vw !important;
+  height:100vh !important;
+  max-width:none !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  background:#000 !important;
+}
+
+/* Some browsers apply fullscreen styles directly to all video elements */
+video:fullscreen,
+video:-webkit-full-screen,
+video:-moz-full-screen{
+  object-fit:contain !important;
+  object-position:center !important;
+  background:#000 !important;
+}
+
+@media(max-width:700px){
+  .video-grid .portrait-video{
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .video-grid .portrait-video video{
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:auto !important;
+  }
+}
