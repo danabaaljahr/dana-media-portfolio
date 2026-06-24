@@ -29,7 +29,6 @@
     <nav class="main-nav" aria-label="التنقل الرئيسي">
       <a href="#home">الرئيسية</a>
       <a href="#categories">الأقسام</a>
-      <a href="#featured">أعمال مختارة</a>
       <a href="#about">نبذة عني</a>
       <a href="#contact">تواصل</a>
     </nav>
@@ -50,11 +49,7 @@
           <a class="btn btn-primary" href="#categories">استكشف الأقسام</a>
           <a class="btn btn-secondary" href="#contact">تواصل معي</a>
         </div>
-        <div class="hero-meta">
-          <div><strong>08</strong><span>مجالات إبداعية</span></div>
-          <div><strong>30+</strong><span>عمل ومشروع</span></div>
-          <div><strong>2026</strong><span>آخر تحديث</span></div>
-        </div>
+        <p class="last-updated">آخر تحديث: <time id="lastUpdated">—</time></p>
       </div>
 
       <div class="hero-visual">
@@ -139,27 +134,6 @@
       </div>
     </section>
 
-    <section class="section featured" id="featured">
-      <div class="section-heading">
-        <span>أعمال مختارة</span>
-        <h2>نظرة سريعة على أبرز المشاريع</h2>
-      </div>
-      <div class="featured-grid">
-        <article class="feature-card large">
-          <img src="assets/photography/strawberry-splash.webp" alt="تجميد حركة الفراولة">
-          <div class="card-overlay"><span>تصوير رقمي</span><h3>تجميد الحركة</h3></div>
-        </article>
-        <article class="feature-card">
-          <img src="assets/design/balad-beast.webp" alt="تصميم Balad Beast">
-          <div class="card-overlay"><span>تصميم جرافيكي</span><h3>Balad Beast</h3></div>
-        </article>
-        <article class="feature-card">
-          <img src="assets/data/gen-z-events-infographic.webp" alt="إنفوجرافيك صحافة البيانات">
-          <div class="card-overlay"><span>صحافة البيانات</span><h3>400 ألف شخص في حدث واحد</h3></div>
-        </article>
-      </div>
-    </section>
-
     <section class="work-section" id="photography">
       <div class="work-header">
         <div>
@@ -219,11 +193,44 @@
       </div>
 
       <div class="video-grid">
-        <article><video controls preload="metadata" src="assets/video/wasm-event-coverage.mp4"></video><h3>تغطية فعالية جمعية وسم</h3></article>
-        <article><video controls preload="metadata" src="assets/video/prince-championship.mp4"></video><h3>تغطية بطولة الأمير</h3></article>
-        <article><video controls preload="metadata" src="assets/video/food-truck-interview.mp4"></video><h3>مقابلة — تجربة الفود ترك</h3></article>
-        <article><video controls preload="metadata" src="assets/video/interview-clip.mp4"></video><h3>مقطع مقابلة</h3></article>
-        <article class="video-wide"><video controls preload="metadata" src="assets/video/abha-project.mp4"></video><h3>مشروع أبها</h3></article>
+        <article>
+          <video controls preload="metadata" src="assets/video/wasm-event-coverage.mp4"></video>
+          <div class="video-copy">
+            <h3>فيديو فعالية جمعية وسم</h3>
+            <p>فيديو قصير مكوّن من مقاطع مختارة من الفعالية مع موسيقى، لعرض أجوائها وأبرز لحظاتها.</p>
+          </div>
+        </article>
+
+        <article>
+          <video controls preload="metadata" src="assets/video/prince-championship.mp4"></video>
+          <div class="video-copy">
+            <h3>فيديو تشويقي لبطولة الأمير</h3>
+            <p>إعلان قصير صُمم للتشويق للفعالية وإبراز أجواء البطولة قبل انطلاقها.</p>
+          </div>
+        </article>
+
+        <article>
+          <video controls preload="metadata" src="assets/video/food-truck-interview.mp4"></video>
+          <div class="video-copy">
+            <h3>مقابلة ضمن فيلم وثائقي قصير</h3>
+            <p>مقابلة ميدانية ضمن مشروع وثائقي قصير، طُرحت فيها الأسئلة نفسها على مشاركين مختلفين لمقارنة تجاربهم ووجهات نظرهم.</p>
+          </div>
+        </article>
+
+        <article>
+          <video controls preload="metadata" src="assets/video/interview-clip.mp4"></video>
+          <div class="video-copy">
+            <h3>مقابلة ضمن فيلم وثائقي قصير</h3>
+            <p>مقابلة ميدانية ضمن مشروع وثائقي قصير، طُرحت فيها الأسئلة نفسها على مشاركين مختلفين لمقارنة تجاربهم ووجهات نظرهم.</p>
+          </div>
+        </article>
+
+        <article class="video-wide">
+          <video controls preload="metadata" src="assets/video/abha-project.mp4"></video>
+          <div class="video-copy">
+            <h3>مشروع أبها</h3>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -338,7 +345,7 @@
   <footer>
     <div><strong>دانة فهد</strong><small>Digital Media Portfolio</small></div>
     
-    <span>© 2026</span>
+    <span>© <span id="currentYear">2026</span></span>
   </footer>
 
   <button class="floating-top" aria-label="العودة للأعلى">↑</button>

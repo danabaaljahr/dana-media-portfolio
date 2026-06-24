@@ -32,3 +32,20 @@ window.addEventListener("scroll",()=>{
     link.classList.toggle("active",link.getAttribute("href")==="#"+current);
   });
 });
+
+const lastUpdatedElement = document.getElementById("lastUpdated");
+if (lastUpdatedElement) {
+  const rawDate = document.lastModified;
+  const parsedDate = rawDate ? new Date(rawDate) : new Date();
+  const safeDate = Number.isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
+  lastUpdatedElement.textContent = new Intl.DateTimeFormat("ar-SA", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  }).format(safeDate);
+}
+
+const currentYearElement = document.getElementById("currentYear");
+if (currentYearElement) {
+  currentYearElement.textContent = new Date().getFullYear().toString();
+}
