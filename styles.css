@@ -796,3 +796,63 @@ video:-moz-full-screen{
     grid-column:auto;
   }
 }
+
+
+/* ===== Animation portfolio section ===== */
+.animation-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:24px;
+}
+
+.animation-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  padding:14px;
+}
+
+.animation-card video{
+  display:block;
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:contain;
+  object-position:center;
+  background:#000;
+  border-radius:13px;
+}
+
+.animation-copy{
+  padding:18px 6px 8px;
+}
+
+.animation-copy .project-type{
+  display:inline-block;
+  margin-bottom:9px;
+  color:var(--accent);
+  font-size:.82rem;
+  font-weight:700;
+}
+
+.animation-copy h3{
+  margin:0 0 9px;
+  font-size:clamp(1.05rem, 2vw, 1.35rem);
+  line-height:1.65;
+}
+
+.animation-copy p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.9;
+}
+
+.animation-short video{
+  max-height:360px;
+}
+
+@media(max-width:760px){
+  .animation-grid{
+    grid-template-columns:1fr;
+  }
+}
