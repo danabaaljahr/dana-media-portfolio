@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>منصة صوت الشباب | عن المنصة</title>
+  <link rel="stylesheet" href="style_professional.css">
+  <style>
+    /* تعديل المسافة بين h1 و p */
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>من نحن؟</h1>
+  <p>رؤية إعلامية يقودها جيل شغوف</p>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="media_initiatives.html">المبادرات</a>
+  <a href="voices.html">أصوات شبابية</a>
+  <a href="gallery.html">المعرض</a>
+  <a href="about.html">عن المنصة</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<main>
+
+  <section class="highlight-box">
+    <h2 style="color:#4b0082; margin-top: 0;">🎯 رؤيتنا</h2>
+    <p>أن تكون منصة "صوت الشباب" المنصة الإعلامية الأولى التي تعكس نبض الجيل الجديد، وتمنحهم مساحة حرة للتعبير والتأثير.</p>
+  </section>
+
+  <section class="highlight-box">
+    <h2 style="color:#4b0082; margin-top: 0;">💡 رسالتنا</h2>
+    <p>نقل صوت الشباب الحقيقي من الواقع إلى العالم الرقمي، من خلال محتوى إعلامي متجدد يعكس تطلعاتهم، ويعزز القيم الإيجابية.</p>
+  </section>
+
+  <section class="highlight-box">
+    <h2 style="color:#4b0082; margin-top: 0;">🌈 قيمنا</h2>
+    <ul>
+      <li>الشفافية في الطرح</li>
+      <li>الاحترام والتنوع</li>
+      <li>التمكين الشبابي</li>
+      <li>الإبداع والتجديد</li>
+    </ul>
+  </section>
+
+  <section class="highlight-box">
+    <h2 style="color:#4b0082; margin-top: 0;">🎯 أهدافنا</h2>
+    <p>تهدف المنصة إلى:</p>
+    <ul>
+      <li>تمكين الشباب من إيصال أصواتهم عبر الإعلام الرقمي</li>
+      <li>دعم المبادرات الطلابية والمجتمعية</li>
+      <li>خلق حوار فعّال بين الشباب وصنّاع القرار</li>
+      <li>تسليط الضوء على النماذج الشبابية الملهمة</li>
+    </ul>
+  </section>
+
+  <section class="highlight-box">
+    <h2 style="color:#4b0082; margin-top: 0;">👥 فريق العمل</h2>
+    <ul>
+      <li>دانه بالجهر – قائدة المشروع والعامله عليه</li>
+      <li>رازان المزمومي، أريام صابر – كتابة المحتوى</li>
+      <li>إسراء الغامدي، بيان الشمراني – مطور واجهات</li>
+      <li>جود الرحيلي – تحرير وتنسيق</li>
+    </ul>
+  </section>
+
+</main>
+
+
+
+<footer>
+  <p>© 2025 منصة صوت الشباب | جميع الحقوق محفوظة</p>
+</footer>
+
+<!-- زر الوضع الليلي -->
+<button id="darkModeToggle">🌙 الوضع الليلي</button>
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+  const savedMode = localStorage.getItem('darkMode');
+  if (savedMode === 'enabled') {
+    document.body.classList.add('dark');
+  } else if (!savedMode) {
+    const hour = new Date().getHours();
+    if (hour >= 19 || hour <= 6) {
+      document.body.classList.add('dark');
+    }
+  }
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+  });
+</script>
+
+<!-- زر العودة للأعلى -->
+<a href="#" id="toTop">↑</a>
+<script>
+  const toTop = document.getElementById("toTop");
+  window.onscroll = () => {
+    toTop.style.display = window.scrollY > 300 ? "block" : "none";
+  };
+</script>
+
+</body>
+</html>
