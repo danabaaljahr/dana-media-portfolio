@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>منصة صوت الشباب | تواصل معنا</title>
+  <link rel="stylesheet" href="style_professional.css">
+  <style>
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    form label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #4b0082;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Cairo', sans-serif;
+      font-size: 1rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-grid-full {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 600px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-grid-full {
+        grid-column: span 1;
+      }
+    }
+
+    .send-btn {
+      display: inline-block;
+      background-color: #6a0dad;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s, transform 0.2s;
+      font-family: 'Cairo', sans-serif;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .send-btn:hover {
+      background-color: #4b0082;
+      transform: scale(1.05);
+    }
+
+    #successMsg {
+      background-color: #e8fbe9;
+      color: #257a3e;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-align: center;
+      display: none;
+      border: 1px solid #b0e0b7;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>تواصل معنا</h1>
+  <p>نستمع لك بكل اهتمام! 💌</p>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="media_initiatives.html">المبادرات</a>
+  <a href="voices.html">أصوات شبابية</a>
+  <a href="gallery.html">المعرض</a>
+  <a href="about.html">عن المنصة</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<main>
+  <h2>📬 نموذج التقديم للانضمام إلى الفريق</h2>
+  <p>املأ النموذج التالي إذا كنت مهتمًا بالانضمام لمنصتنا الإعلامية كشاب/ـة طموح/ـة.</p>
+
+  <form id="apply-form" onsubmit="handleSubmit(event)">
+    <div class="form-grid">
+      <div>
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" placeholder="مثال: سارة القحطاني" required>
+      </div>
+
+      <div>
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-grid-full">
+        <label for="field">المجال الإعلامي المفضل:</label>
+        <select id="field" required>
+          <option disabled selected>اختر مجالاً</option>
+          <option>كتابة المحتوى</option>
+          <option>التصميم الجرافيكي</option>
+          <option>التصوير والإخراج</option>
+          <option>الإعلام الرقمي</option>
+          <option>التقديم والحوار</option>
+        </select>
+      </div>
+
+      <div class="form-grid-full">
+        <label for="message">لماذا ترغب في الانضمام؟</label>
+        <textarea id="message" rows="4" placeholder="أخبرنا عن دوافعك وخبراتك" required></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="send-btn">إرسال الطلب</button>
+  </form>
+
+  <div id="successMsg">✅ شكرًا لانضمامك إلى منصة "صوت الشباب"! سنراجع طلبك ونتواصل معك قريبًا.</div>
+</main>
+
+<footer>
+  <p>© 2025 منصة صوت الشباب | جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById("apply-form").reset();
+    document.getElementById("successMsg").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("successMsg").style.display = "none";
+    }, 5000);
+  }
+</script>
+
+<!-- الوضع الليلي -->
+<button id="darkModeToggle">🌙 الوضع الليلي</button>
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+  const savedMode = localStorage.getItem('darkMode');
+  if (savedMode === 'enabled') {
+    document.body.classList.add('dark');
+  } else if (!savedMode) {
+    const hour = new Date().getHours();
+    if (hour >= 19 || hour <= 6) {
+      document.body.classList.add('dark');
+    }
+  }
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+  });
+</script>
+
+<!-- زر العودة لأعلى -->
+<a href="#" id="toTop">↑</a>
+<script>
+  const toTop = document.getElementById("toTop");
+  window.onscroll = () => {
+    toTop.style.display = window.scrollY > 300 ? "block" : "none";
+  };
+</script>
+
+</body>
+</html>

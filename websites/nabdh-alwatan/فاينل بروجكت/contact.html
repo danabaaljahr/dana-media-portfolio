@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نبض الوطن | تواصل معنا</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ كود تشغيل رسالة النجاح -->
+  <script>
+    function showMessage(event) {
+      event.preventDefault(); // يمنع إعادة تحميل الصفحة
+      const msg = document.getElementById('success-message');
+      msg.style.display = 'block';
+
+      // اختياري: إخفاء الرسالة بعد 5 ثواني
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>تواصل معنا</h1>
+    <p>نسعد باستقبال استفساراتك وآرائك واقتراحاتك</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="reports.html">التقارير</a></li>
+      <li><a href="vision2030.html">رؤية 2030</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <section class="content contact-section">
+    <div class="contact-card">
+      <h2>نرحب بتواصلك</h2>
+      <p>أرسل لنا رسالتك وسيتم الرد خلال 24 ساعة</p>
+
+      <form>
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="message">الرسالة:</label>
+        <textarea id="message" name="message" placeholder="كيف يمكننا مساعدتك؟" required></textarea>
+
+        <button type="submit" onclick="showMessage(event)">إرسال الرسالة</button>
+      </form>
+
+      <!-- ✅ رسالة النجاح -->
+      <p id="success-message" class="success-message" style="display: none;">
+        ✅ تم إرسال رسالتك بنجاح، شكرًا لتواصلك معنا!
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <h3>معلومات التواصل</h3>
+      <ul>
+        <li><strong>📞 الهاتف:</strong> 9200 000 00</li>
+        <li><strong>📧 البريد:</strong> info@nabd.com</li>
+        <li><strong>🌐 الموقع:</strong> www.nabd.com</li>
+        <li><strong>📍 العنوان:</strong> الرياض - المملكة العربية السعودية</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 نبض الوطن - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>

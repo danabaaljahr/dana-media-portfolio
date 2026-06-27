@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مخطط تفاعلي يبني استراتيجية حملة رقمية متكاملة تشمل الجمهور، المحتوى، جدول النشر، الكابشن، الهاشتاقات، مؤشرات الأداء وCTA.">
+  <title>CampaignCraft | مخطط الحملات الرقمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-auth-mode="landing">
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">CC</span><span>CampaignCraft</span></a>
+    <nav><a href="#campaigns" data-requires-auth>حملاتي</a><a href="#planner" data-requires-auth>المخطط</a><a href="surveys.html" data-requires-auth>الاستبيانات</a><a href="#about">عن المشروع</a></nav>
+    <div class="theme-switcher" aria-label="اختيار المظهر">
+      <button type="button" class="theme-toggle-button" data-theme-toggle aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+        <span class="theme-label-ar">المظهر</span>
+        <span class="theme-label-en">Theme</span>
+      </button>
+    </div>
+  </header>
+
+  <button class="mobile-menu-button" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileSiteMenu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-menu-overlay" data-mobile-menu-close></div>
+  <aside class="mobile-site-menu" id="mobileSiteMenu" aria-hidden="true">
+    <div class="mobile-menu-head">
+      <div class="mobile-menu-title"><span class="brand-mark">CC</span><div><strong>CampaignCraft</strong><small class="menu-ar">القائمة الرئيسية</small><small class="menu-en">Main menu</small></div></div>
+      <button class="mobile-menu-close" type="button" data-mobile-menu-close aria-label="إغلاق القائمة">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </div>
+    <div class="mobile-menu-content">
+      <section class="mobile-menu-section mobile-nav-slot">
+        <p class="mobile-menu-label"><span class="menu-ar">التنقل</span><span class="menu-en">Navigation</span></p>
+      </section>
+      <section class="mobile-menu-section mobile-preferences-slot">
+        <p class="mobile-menu-label"><span class="menu-ar">إعدادات العرض</span><span class="menu-en">Display settings</span></p>
+      </section>
+      <section class="mobile-menu-section mobile-account-slot">
+        <p class="mobile-menu-label"><span class="menu-ar">الحساب</span><span class="menu-en">Account</span></p>
+      </section>
+    </div>
+    <div class="mobile-menu-footer"><span class="menu-ar">منصة تخطيط الحملات الرقمية</span><span class="menu-en">Digital campaign planning platform</span></div>
+  </aside>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SMART DIGITAL CAMPAIGN PLANNER</p>
+        <h1>من فكرة بسيطة إلى<br><span>حملة قابلة للتنفيذ</span></h1>
+        <p>أجب عن أسئلة واضحة تشبه نموذج عمل وكالات التسويق، وسيحوّل الموقع إجاباتك إلى استراتيجية، أهداف قابلة للقياس، خطة محتوى، ميزانية، تنفيذ وتحليل أداء.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#planner" data-requires-auth>ابدأ حملتك الآن <span>←</span></a><a class="secondary-btn" href="#howToUse">استكشف الموقع كضيف</a></div>
+      </div>
+      <div class="hero-dashboard reveal delay-1" aria-hidden="true">
+        <div class="dash-head"><span>LIVE CAMPAIGN</span><b>78%</b></div>
+        <div class="metric-grid"><article><small>Reach</small><strong>128K</strong><i>+24%</i></article><article><small>CTR</small><strong>4.8%</strong><i>+1.2%</i></article></div>
+        <div class="chart"><span style="height:34%"></span><span style="height:52%"></span><span style="height:43%"></span><span style="height:72%"></span><span style="height:64%"></span><span style="height:91%"></span><span style="height:82%"></span></div>
+        <div class="dash-tags"><span>Strategy</span><span>Content</span><span>Analytics</span></div>
+      </div>
+    </section>
+
+    <section class="feature-strip section-wrap reveal">
+      <span>تحليل الجمهور</span><span>استبيانات وأبحاث</span><span>استراتيجية المنصة</span><span>تقويم محتوى</span><span>كابشن وCTA</span><span>KPIs</span>
+    </section>
+
+
+    <section id="howToUse" class="how-to-use section-wrap reveal">
+      <div class="section-heading compact"><p class="eyebrow">START HERE</p><h2>طريقة استخدام الموقع في 5 خطوات</h2><p>لا تحتاج إلى خبرة تسويقية مسبقة. أكمل البيانات بالترتيب، ويمكنك حفظ المسودة والعودة لها في أي وقت.</p></div>
+      <div class="how-grid">
+        <article><b>01</b><h3>عرّف الحملة</h3><p>اكتب ما الذي تسوّق له، ولماذا تبدأ الحملة الآن، وما القيمة التي تقدمها.</p></article>
+        <article><b>02</b><h3>حدّد النجاح بالأرقام</h3><p>ضع أهدافًا مثل الوصول، المشاهدات، الإعجابات، النقرات، التسجيلات أو المبيعات.</p></article>
+        <article><b>03</b><h3>صف الجمهور</h3><p>اختر الفئة واحتياجاتها واعتراضاتها وسلوكها؛ لأن الخطة تُبنى على هذه الإجابات.</p></article>
+        <article><b>04</b><h3>اختر القنوات والموارد</h3><p>حدّد المنصات والميزانية والفريق والأصول المتاحة حتى تكون الخطة قابلة للتنفيذ.</p></article>
+        <article><b>05</b><h3>نفّذي ثم قيسي</h3><p>احفظ الخطة، وأدخل النتائج الفعلية، وسيقارنها الموقع بالأهداف ويقترح التحسينات.</p></article>
+      </div>
+      <details class="marketing-glossary"><summary>مصطلحات مهمة للمبتدئين</summary><div><p><strong>الوصول:</strong> عدد الأشخاص الفريدين الذين شاهدوا المحتوى.</p><p><strong>مرات الظهور:</strong> عدد مرات عرض المحتوى، وقد يشاهده الشخص أكثر من مرة.</p><p><strong>CTR:</strong> نسبة من نقروا الرابط من إجمالي من شاهدوا الإعلان أو المحتوى.</p><p><strong>التحويل:</strong> الإجراء النهائي المطلوب مثل شراء أو تسجيل أو تحميل.</p><p><strong>CTA:</strong> العبارة التي تطلب من الجمهور اتخاذ خطوة واضحة.</p></div></details>
+    </section>
+
+    <section id="campaigns" class="campaign-library section-wrap reveal">
+      <div class="library-heading">
+        <div><p class="eyebrow">MY CAMPAIGNS</p><h2>حملاتي المحفوظة</h2><p>كل حملة تُحفظ تلقائيًا على هذا الجهاز، ويمكنك الرجوع لها وتعديلها أو تحديد حالتها.</p></div>
+        <div class="library-actions"><button id="newCampaign" type="button">+ حملة جديدة</button><a class="library-link" href="surveys.html">مركز الاستبيانات</a><button id="exportCampaigns" type="button">تصدير نسخة احتياطية</button><label class="import-label">استيراد نسخة<input id="importCampaigns" type="file" accept="application/json"></label></div>
+      </div>
+      <div class="library-stats"><article><strong id="allCount">0</strong><span>إجمالي الحملات</span></article><article><strong id="activeCount">0</strong><span>قيد التنفيذ</span></article><article><strong id="completedCount">0</strong><span>مكتملة</span></article><article><strong id="archivedCount">0</strong><span>مؤرشفة</span></article></div>
+      <section class="portfolio-dashboard" aria-label="ملخص الحملات">
+        <article class="dashboard-card status-overview"><div class="card-head"><div><span class="card-kicker">PORTFOLIO OVERVIEW</span><h3>حالة جميع الحملات</h3></div><strong id="portfolioCompletion">0%</strong></div><div class="donut-layout"><div id="portfolioDonut" class="donut-chart" aria-label="رسم دائري لحالات الحملات"><div class="donut-center"><b id="donutTotal">0</b><span>حملة</span></div></div><div id="donutLegend" class="donut-legend"></div></div></article>
+        <article class="dashboard-card insights-overview"><span class="card-kicker">QUICK INSIGHTS</span><h3>قراءة سريعة للمحفظة</h3><div id="portfolioInsights" class="portfolio-insights"></div></article>
+      </section>
+      <div class="library-filters" role="tablist"><button class="active" data-filter="all" type="button">الكل</button><button data-filter="draft" type="button">مسودات</button><button data-filter="active" type="button">قيد التنفيذ</button><button data-filter="completed" type="button">مكتملة</button><button data-filter="archived" type="button">الأرشيف</button></div>
+      <div id="campaignLibrary" class="campaign-library-grid"></div>
+      <div id="emptyLibrary" class="empty-library"><b>لا توجد حملات محفوظة بعد</b><p>ابدأ حملة جديدة، وسيتم حفظ بياناتها تلقائيًا أثناء الكتابة.</p><a href="#planner">ابدأ الآن ←</a></div>
+    </section>
+
+    <section id="planner" class="planner section-wrap">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CAMPAIGN BUILDER</p>
+        <h2>نموذج تخطيط الحملة الكامل</h2>
+        <p>أكمل الأقسام بالترتيب. كل سؤال يحمل شرحًا مختصرًا، والحقول الموسومة «أساسي» ضرورية لبناء خطة دقيقة وقابلة للقياس.</p>
+      </div>
+
+      <div class="beginner-guide reveal" aria-label="دليل الاستخدام السريع">
+        <div class="guide-icon">?</div>
+        <div><strong>ابدئي من الأعلى واتّبعي الأقسام بالترتيب</strong><p>اختر الأقرب لوضعك الحالي، واستخدم «غير ذلك» عندما لا يناسبك أي خيار. الأهداف الرقمية ليست توقعات عشوائية؛ ضع أرقامًا واقعية بناءً على ميزانيتك ونتائجك السابقة أو اترك غير المعروف فارغًا.</p></div>
+        <div class="brief-progress"><span>اكتمال البيانات</span><b id="briefProgressText">0%</b><i><em id="briefProgressBar"></em></i></div>
+      </div>
+
+      <form id="campaignForm" class="builder" autocomplete="off">
+        <div class="form-section">
+          <div class="form-section-title"><span>01</span><div><h3>أساسيات المشروع</h3><p>ما الذي ستسوّق له الحملة؟</p></div></div>
+          <div class="form-grid">
+            <label class="wide">اسم الحملة أو المشروع <span class="required-mark">أساسي</span><small class="field-help">اكتب اسمًا مختصرًا يوضح الفكرة أو القضية أو المنتج الذي ستدور حوله الحملة.</small><input id="campaignName" type="text" maxlength="55" placeholder="مثال: التصنيف يحميك، موسمك أجمل، جرّب الفرق" required></label>
+            <label>مجال الحملة <span class="required-mark">أساسي</span><small class="field-help">اختر المجال الأقرب حتى يضبط الموقع الرسائل والأفكار والمصطلحات المناسبة.</small>
+              <select id="industry" required><option value="food">مطاعم ومقاهٍ</option><option value="fashion">أزياء وجمال</option><option value="education">تعليم وتدريب</option><option value="technology">تقنية وتطبيقات</option><option value="tourism">سياحة وفعاليات</option><option value="health">صحة ولياقة</option><option value="government">جهة حكومية أو خدمة عامة</option><option value="culture">ثقافة وفنون وإعلام</option><option value="environment">بيئة واستدامة</option><option value="social">قضية اجتماعية أو سلوكية</option><option value="nonprofit">مبادرة أو جهة غير ربحية</option><option value="personal">علامة شخصية وصانع محتوى</option><option value="retail">تجارة إلكترونية ومتاجر</option><option value="finance">بنوك وتمويل وتأمين</option><option value="realestate">عقار وإسكان</option><option value="automotive">سيارات ونقل</option><option value="entertainment">ترفيه وألعاب</option><option value="sports">رياضة وأندية</option><option value="hospitality">فنادق وضيافة</option><option value="professionalServices">خدمات مهنية واستشارات</option><option value="research">بحث ودراسات واستبيانات</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="industryCustom" type="text" maxlength="80" placeholder="اكتب مجال الحملة كما هو، مثل: التصنيفات العمرية للمحتوى">
+            </label>
+            <label>نوع الجهة أو صاحب الحملة <span class="required-mark">أساسي</span><small class="field-help">يساعد على اختيار أسلوب الخطاب وآلية الموافقات المناسبة.</small><select id="organizationType" required><option value="company">شركة أو علامة تجارية</option><option value="government">جهة حكومية</option><option value="nonprofit">جهة غير ربحية أو مبادرة</option><option value="startup">مشروع ناشئ</option><option value="personal">علامة شخصية أو صانع محتوى</option><option value="eventOrg">منظم فعالية</option><option value="agency">وكالة أو فريق تسويق</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="organizationTypeCustom" type="text" placeholder="اكتب نوع الجهة"></label>
+            <label>ما الذي تروّج له الحملة؟ <span class="required-mark">أساسي</span><small class="field-help">حدّد موضوع الحملة حتى لا يفترض الموقع أنها منتج ملموس فقط.</small><select id="campaignSubject" required><option value="product">منتج</option><option value="service">خدمة</option><option value="app">تطبيق أو منصة رقمية</option><option value="event">فعالية أو مناسبة</option><option value="initiative">مبادرة أو برنامج</option><option value="awarenessIssue">قضية توعوية أو سلوكية</option><option value="policy">نظام أو سياسة أو تصنيف</option><option value="content">محتوى أو برنامج إعلامي</option><option value="brand">علامة أو هوية</option><option value="research">بحث أو استبيان</option><option value="fundraising">تبرع أو دعم مجتمعي</option><option value="recruitment">فرصة وظيفية أو تطوعية</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="campaignSubjectCustom" type="text" placeholder="اكتب موضوع الحملة"></label>
+            <label class="wide">وصف مختصر لما تقدمه الحملة <span class="required-mark">أساسي</span><small class="field-help">اشرحي الفكرة بجملة واحدة كما لو كنت تشرحينها لشخص يسمع عنها لأول مرة.</small><textarea id="offerDescription" rows="3" maxlength="320" placeholder="مثال: حملة توعوية تساعد الأسر على فهم التصنيفات العمرية واختيار المحتوى المناسب لأطفالهم" required></textarea></label>
+            <label>سبب إطلاق الحملة الآن<small class="field-help">المناسبة أو المشكلة أو الفرصة التي تجعل التوقيت مهمًا.</small><select id="campaignTrigger"><option value="launch">إطلاق جديد</option><option value="season">موسم أو مناسبة</option><option value="problem">وجود مشكلة أو سلوك يحتاج تغييرًا</option><option value="growth">رغبة في النمو أو التوسع</option><option value="competition">منافسة أو انخفاض حصة السوق</option><option value="reputation">تحسين صورة أو معالجة انطباع</option><option value="deadline">موعد أو فترة تسجيل محددة</option><option value="alwaysOn">حملة مستمرة طوال العام</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="campaignTriggerCustom" type="text" placeholder="اكتب سبب إطلاق الحملة"></label>
+            <label>مرحلة الحملة<small class="field-help">هل ما زلتم في بداية الفكرة أم توجد حملة سابقة وبيانات يمكن الاستفادة منها؟</small><select id="campaignStage"><option value="new">جديدة من الصفر</option><option value="relaunch">إعادة إطلاق</option><option value="continuation">امتداد لحملة قائمة</option><option value="optimization">تحسين حملة ضعيفة</option><option value="scale">توسيع حملة ناجحة</option><option value="crisis">استجابة سريعة لأزمة</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="campaignStageCustom" type="text" placeholder="اكتب مرحلة الحملة"></label>
+            <label>الهدف الرئيسي <span class="required-mark">أساسي</span><small class="field-help">هذا أهم اختيار في الخطة؛ حدّد النتيجة الكبرى التي تريدين الوصول إليها من الحملة.</small>
+              <select id="goal" required><option value="sales">الترويج وزيادة المبيعات</option><option value="launch">إطلاق منتج أو خدمة أو مبادرة</option><option value="awareness">رفع الوعي والتعريف</option><option value="educationGoal">التثقيف وتبسيط المعلومات</option><option value="behaviorChange">تغيير سلوك أو عادة</option><option value="engagement">زيادة التفاعل وبناء مجتمع</option><option value="event">الترويج لفعالية أو مناسبة</option><option value="leads">جمع تسجيلات أو طلبات اهتمام</option><option value="traffic">زيادة الزيارات لمنصة أو موقع</option><option value="adoption">تشجيع استخدام خدمة أو تطبيق</option><option value="reputation">تحسين السمعة والصورة الذهنية</option><option value="socialImpact">دعم قضية أو صناعة أثر اجتماعي</option><option value="fundraising">جمع تبرعات أو دعم</option><option value="recruitment">استقطاب متطوعين أو موظفين</option><option value="retention">الحفاظ على الجمهور ورفع الولاء</option><option value="crisis">إدارة أزمة وتصحيح معلومات</option><option value="appDownloads">زيادة تحميل تطبيق</option><option value="storeVisits">زيادة زيارة فرع أو موقع</option><option value="researchParticipation">زيادة المشاركة في بحث أو استبيان</option><option value="policyCompliance">رفع الالتزام بسياسة أو تصنيف أو إرشاد</option><option value="customerService">تقليل الاستفسارات وتحسين خدمة الجمهور</option><option value="communityGrowth">تنمية قاعدة المتابعين والمجتمع</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="goalCustom" type="text" maxlength="100" placeholder="اكتب الهدف الرئيسي للحملة">
+            </label>
+            <label>الهدف التفصيلي <span class="required-mark">أساسي</span><small class="field-help">اختر النتيجة الدقيقة التي يمكن ملاحظتها أو قياسها خلال مدة الحملة.</small>
+              <select id="subGoal" required></select>
+              <input class="custom-choice hidden" id="subGoalCustom" type="text" maxlength="120" placeholder="اكتب الهدف التفصيلي المطلوب بدقة">
+            </label>
+            <label>مدة الحملة<small class="field-help">اختر الفترة الواقعية المتاحة للتنفيذ والقياس. الحملات التوعوية غالبًا تحتاج مدة أطول من الإعلانات المباشرة.</small><select id="duration"><option value="7">7 أيام</option><option value="14">أسبوعان</option><option value="30" selected>شهر</option><option value="60">شهران</option><option value="90">3 أشهر</option><option value="180">6 أشهر</option><option value="365">سنة</option><option value="other">غير ذلك — مدة مخصصة</option></select><input class="custom-choice hidden" id="durationCustom" type="number" min="1" max="730" placeholder="اكتب عدد الأيام"></label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title"><span>02</span><div><h3>الجمهور المستهدف</h3><p>كل اختيار يؤثر في الرسائل والأسلوب والتوقيت.</p></div></div>
+          <div class="form-grid">
+            <label>نوع الجمهور المستهدف <span class="required-mark">أساسي</span><small class="field-help">من هم الأشخاص أو الجهات الأكثر أهمية لتحقيق هدف الحملة؟</small>
+              <select id="audienceType" required><option value="general">الجمهور العام</option><option value="students">طلاب وطالبات</option><option value="parents">أولياء أمور وأسر</option><option value="employees">موظفون وباحثون عن عمل</option><option value="professionals">متخصصون وممارسون مهنيون</option><option value="businesses">شركات وصناع قرار</option><option value="creators">صناع محتوى ومؤثرون</option><option value="volunteers">متطوعون وداعمون</option><option value="beneficiaries">مستفيدون من خدمة أو مبادرة</option><option value="customers">عملاء حاليون</option><option value="prospects">عملاء محتملون</option><option value="childrenAudience">أطفال</option><option value="teensAudience">مراهقون</option><option value="families">عائلات</option><option value="seniorsAudience">كبار السن</option><option value="media">إعلاميون وصحفيون</option><option value="investors">مستثمرون وشركاء</option><option value="governmentAudience">جهات حكومية وصناع سياسات</option><option value="tourists">سياح وزوار</option><option value="patients">مرضى ومراجعون</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="audienceTypeCustom" type="text" maxlength="100" placeholder="اكتب الجمهور المستهدف بالتحديد">
+            </label>
+            <label>الفئة العمرية<small class="field-help">العمر يؤثر في اللغة، شكل المحتوى، المنصة، وسرعة الإيقاع.</small>
+              <select id="age"><option value="children">أطفال أقل من 13 سنة</option><option value="teens">13–17 سنة</option><option value="young" selected>18–24 سنة</option><option value="adults">25–34 سنة</option><option value="mature">35–44 سنة</option><option value="older">45–54 سنة</option><option value="senior">55 سنة فأكثر</option><option value="multi">أكثر من فئة عمرية</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="ageCustom" type="text" maxlength="80" placeholder="اكتب الفئة العمرية المطلوبة">
+            </label>
+            <label>الجنس<small class="field-help">اختر النساء أو الرجال فقط عندما تكون الرسالة موجهة بوضوح لفئة واحدة، وإلا اختر الجميع.</small><select id="gender"><option value="all">الجميع — نساء ورجال</option><option value="women">نساء</option><option value="men">رجال</option></select></label>
+            <label>النطاق الجغرافي<small class="field-help">حدّد أين يوجد جمهورك حتى تكون الأمثلة، التوقيتات، واللهجة مناسبة له.</small>
+              <select id="location"><option value="jeddah">جدة</option><option value="riyadh">الرياض</option><option value="city">مدينة أو محافظة محددة</option><option value="region">منطقة محددة داخل السعودية</option><option value="saudi" selected>جميع مناطق السعودية</option><option value="gulf">دول الخليج</option><option value="arab">الوطن العربي</option><option value="global">جمهور عالمي</option><option value="online">جمهور رقمي دون نطاق مكاني</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="locationCustom" type="text" maxlength="100" placeholder="اكتب المدينة أو المنطقة أو الدول المستهدفة">
+            </label>
+            <label>أهم اهتمام أو احتياج للجمهور<small class="field-help">اختر الدافع الذي يجعل الجمهور يهتم بالحملة أو يتفاعل معها.</small>
+              <select id="interest"><option value="offers">العروض وتوفير المال</option><option value="trends">الترندات والتجارب الجديدة</option><option value="quality">الجودة والنتائج الموثوقة</option><option value="learning">التعلم وتطوير المهارات</option><option value="safety">السلامة والحماية واتخاذ القرار الصحيح</option><option value="awarenessNeed">فهم الأنظمة أو المعلومات المهمة</option><option value="lifestyle">أسلوب الحياة والتجارب</option><option value="community">المجتمع والمشاركة</option><option value="convenience">السهولة وتوفير الوقت والجهد</option><option value="status">المكانة والصورة الاجتماعية</option><option value="entertainmentNeed">المتعة والترفيه</option><option value="belonging">الانتماء والهوية</option><option value="healthNeed">الصحة والرفاه</option><option value="career">الوظيفة والتقدم المهني</option><option value="familyNeed">الأسرة والأطفال</option><option value="trust">الثقة والشفافية</option><option value="impact">الأثر الاجتماعي والبيئي</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="interestCustom" type="text" maxlength="120" placeholder="اكتب اهتمام الجمهور أو احتياجه الأساسي">
+            </label>
+            <label>مرحلة الجمهور<small class="field-help">حدّد مدى معرفة الجمهور بالفكرة الآن؛ لأن رسالة التعريف تختلف عن رسالة الإقناع أو التحويل.</small>
+              <select id="funnel"><option value="unaware">غير مدرك للمشكلة أو الموضوع</option><option value="cold">يدرك الموضوع لكن معرفته محدودة</option><option value="warm">يعرف الفكرة ويبحث عن معلومات أكثر</option><option value="considering">يقارن بين خيارات أو وجهات نظر</option><option value="hot">مقتنع ومستعد لاتخاذ إجراء</option><option value="customers">سبق أن اتخذ الإجراء أو استفاد</option><option value="advocates">مؤيد ويمكن أن ينشر الرسالة</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="funnelCustom" type="text" maxlength="120" placeholder="اكتب المرحلة التي يمر بها الجمهور">
+            </label>
+            <label>السلوك الأهم<small class="field-help">اختر السلوك الأكثر شيوعًا عند جمهورك أثناء مشاهدة المحتوى أو اتخاذ القرار.</small>
+              <select id="behavior"><option value="watch">يشاهد الفيديو القصير</option><option value="search">يبحث ويتحقق قبل اتخاذ القرار</option><option value="reviews">يتأثر بالتجارب وآراء الآخرين</option><option value="share">يشارك المحتوى المفيد مع الآخرين</option><option value="save">يحفظ المحتوى للرجوع إليه</option><option value="discuss">يناقش ويسأل قبل الاقتناع</option><option value="avoid">يتجاهل الرسائل المباشرة أو الرسمية</option><option value="fast">يتخذ قرارات سريعة</option><option value="offline">يتأثر بالمحيط والأسرة أكثر من المنصات</option><option value="click">ينقر على الروابط عند وضوح الفائدة</option><option value="compare">يقارن الأسعار أو البدائل</option><option value="ask">يراسل أو يسأل قبل اتخاذ القرار</option><option value="buy">يشتري مباشرة عند وجود عرض مناسب</option><option value="register">يسجل في النماذج والفعاليات</option><option value="follow">يتابع الحساب قبل التفاعل</option><option value="listen">يفضل المحتوى الصوتي والبودكاست</option><option value="longform">يفضل المحتوى الطويل والمتعمق</option><option value="other">غير ذلك</option></select>
+              <input class="custom-choice hidden" id="behaviorCustom" type="text" maxlength="120" placeholder="اكتب السلوك الأهم لدى الجمهور">
+            </label>
+            <label>المشكلة أو الاحتياج الأساسي <span class="required-mark">أساسي</span><small class="field-help">ما الذي يزعج الجمهور أو يحتاج إلى حل أو توضيح؟</small><textarea id="audiencePain" rows="3" maxlength="260" placeholder="مثال: الحيرة في معرفة المحتوى المناسب لعمر الأطفال" required></textarea></label>
+            <label>الدافع الأقوى لاتخاذ القرار<small class="field-help">ما الذي سيجعل الجمهور يهتم أو يتحرك؟</small><select id="audienceMotivation"><option value="saveMoney">توفير المال</option><option value="saveTime">توفير الوقت والجهد</option><option value="safety">الأمان والحماية</option><option value="quality">الجودة والنتيجة الأفضل</option><option value="belonging">الانتماء والمشاركة</option><option value="status">المكانة والصورة الاجتماعية</option><option value="convenience">السهولة والراحة</option><option value="learning">التعلم والفهم</option><option value="reward">عرض أو مكافأة</option><option value="fearLoss">تجنب خسارة أو ضرر</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="audienceMotivationCustom" type="text" placeholder="اكتب الدافع"></label>
+            <label>أكبر اعتراض أو سبب للتردد<small class="field-help">اكتبه حتى تتضمن الخطة محتوى يعالجه ويزيد الثقة.</small><select id="audienceObjection"><option value="price">السعر أو الميزانية</option><option value="trust">ضعف الثقة</option><option value="need">عدم الشعور بالحاجة</option><option value="time">ضيق الوقت</option><option value="complexity">صعوبة الفهم أو الاستخدام</option><option value="comparison">يفضل بديلًا أو منافسًا</option><option value="risk">الخوف من المخاطرة</option><option value="privacy">الخصوصية أو مشاركة البيانات</option><option value="approval">يحتاج موافقة شخص آخر</option><option value="none">لا يوجد اعتراض واضح</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="audienceObjectionCustom" type="text" placeholder="اكتب الاعتراض"></label>
+            <label>طريقة اتخاذ القرار<small class="field-help">هل يقرر الفرد وحده أم يؤثر عليه آخرون؟</small><select id="decisionMaker"><option value="self">الفرد يقرر بنفسه</option><option value="family">الأسرة أو الوالدان</option><option value="manager">مدير أو جهة عمل</option><option value="committee">لجنة أو أكثر من صاحب قرار</option><option value="influencer">يتأثر بمؤثر أو خبير</option><option value="community">يتأثر بالمجتمع والتوصيات</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="decisionMakerCustom" type="text" placeholder="اكتب صاحب القرار"></label>
+            <label class="wide">وصف شخصية الجمهور بجملة واحدة<small class="field-help">مثال: أمهات عاملات في جدة يبحثن عن طريقة سريعة وموثوقة لاتخاذ قرار مناسب.</small><input id="personaSummary" type="text" maxlength="220" placeholder="اكتب وصفًا واضحًا للجمهور"></label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title"><span>03</span><div><h3>السوق والرسالة والتميّز</h3><p>أسئلة تستخدمها وكالات التسويق لفهم المنافسة وبناء رسالة لا تشبه الجميع.</p></div></div>
+          <div class="form-grid">
+            <label class="wide">الميزة أو القيمة المختلفة <span class="required-mark">أساسي</span><small class="field-help">لماذا يختارك الجمهور أو يثق برسالتك بدل البدائل؟</small><textarea id="uniqueValue" rows="3" maxlength="320" placeholder="مثال: معلومات مبسطة وموثوقة تساعد الأسرة على اتخاذ قرار سريع" required></textarea></label>
+            <label>نوع المنافسة<small class="field-help">قد تكون المنافسة علامة أخرى، سلوكًا قديمًا، معلومة خاطئة أو عدم اهتمام.</small><select id="competitionType"><option value="direct">منافسون يقدمون الشيء نفسه</option><option value="indirect">بدائل مختلفة تحل المشكلة</option><option value="behavior">عادة أو سلوك قائم</option><option value="misinformation">معلومات أو تصورات خاطئة</option><option value="attention">منافسة على وقت واهتمام الجمهور</option><option value="none">لا توجد منافسة واضحة</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="competitionTypeCustom" type="text" placeholder="اكتب نوع المنافسة"></label>
+            <label>مستوى معرفة الجمهور بالعلامة<small class="field-help">يحدد مقدار التعريف المطلوب قبل طلب الإجراء.</small><select id="brandAwareness"><option value="unknown">لا يعرفونها</option><option value="low">معرفة محدودة</option><option value="medium">معروفة جزئيًا</option><option value="high">معروفة ولها جمهور</option><option value="loyal">لها مجتمع وعملاء أوفياء</option><option value="mixed">يختلف حسب الفئة</option></select></label>
+            <label class="wide">أهم المنافسين أو البدائل<small class="field-help">اكتب الأسماء أو البدائل أو السلوك الذي تريد الحملة تغييره.</small><input id="competitors" type="text" maxlength="280" placeholder="مثال: منصات الترفيه الأخرى، التوصيات العشوائية، عدم قراءة التصنيف"></label>
+            <label>الصورة الذهنية المطلوبة<small class="field-help">كيف تريدين أن يصف الناس الجهة بعد الحملة؟</small><select id="desiredPerception"><option value="trusted">موثوقة</option><option value="expert">خبيرة ومتخصصة</option><option value="friendly">قريبة وسهلة</option><option value="innovative">مبتكرة وحديثة</option><option value="premium">راقية وعالية الجودة</option><option value="responsible">مسؤولة وواعية</option><option value="fast">سريعة وعملية</option><option value="inclusive">شاملة ومناسبة للجميع</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="desiredPerceptionCustom" type="text" placeholder="اكتب الصورة الذهنية"></label>
+            <label>الرسالة التي يجب تجنبها<small class="field-help">حدّد أي وعود أو نبرة أو موضوعات قد تسبب سوء فهم أو حساسية.</small><input id="messageAvoid" type="text" maxlength="250" placeholder="مثال: التخويف المبالغ فيه أو لوم الوالدين"></label>
+            <label>هل توجد حملة أو بيانات سابقة؟<small class="field-help">وجود نتائج سابقة يساعد في وضع أهداف واقعية.</small><select id="previousData"><option value="none">لا توجد</option><option value="organic">نتائج محتوى عضوي</option><option value="paid">نتائج إعلانات مدفوعة</option><option value="survey">استبيانات أو أبحاث جمهور</option><option value="sales">بيانات مبيعات أو تسجيلات</option><option value="mixed">أكثر من مصدر</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="previousDataCustom" type="text" placeholder="اكتب نوع البيانات"></label>
+            <label class="wide">أهم درس من الجهود السابقة<small class="field-help">ما الذي نجح أو لم ينجح؟ اتركه فارغًا إذا كانت الحملة جديدة.</small><textarea id="previousLearning" rows="3" maxlength="350" placeholder="مثال: الفيديو القصير حقق مشاهدة عالية لكن CTA لم يكن واضحًا"></textarea></label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section-title"><span>04</span><div><h3>القنوات والموارد والتنفيذ</h3><p>نضبط الخطة حسب طبيعة المنصة وموارد الحملة.</p></div></div>
+          <div class="form-grid">
+            <fieldset class="platform-field wide">
+              <legend>منصات الحملة <span class="required-mark">اختر واحدة أو أكثر</span></legend>
+              <small class="field-help">اختر كل القنوات التي ستُنشر فيها الحملة. سيبني الموقع توزيعًا مختلفًا للمحتوى حسب طبيعة كل منصة.</small>
+              <input type="hidden" id="platform" value="instagram">
+              <div class="platform-options" id="platformOptions">
+                <label><input type="checkbox" value="instagram" checked><span>Instagram<small>ريلز، قصص، كاروسيل</small></span></label>
+                <label><input type="checkbox" value="tiktok"><span>TikTok<small>فيديو قصير وترندات</small></span></label>
+                <label><input type="checkbox" value="x"><span>X<small>نقاشات، أخبار، سلاسل</small></span></label>
+                <label><input type="checkbox" value="youtube"><span>YouTube<small>فيديو طويل وShorts</small></span></label>
+                <label><input type="checkbox" value="linkedin"><span>LinkedIn<small>محتوى مهني وB2B</small></span></label>
+                <label><input type="checkbox" value="snapchat"><span>Snapchat<small>قصص يومية وتغطيات</small></span></label>
+                <label><input type="checkbox" value="facebook"><span>Facebook<small>مجتمعات وإعلانات</small></span></label>
+                <label><input type="checkbox" value="threads"><span>Threads<small>حوارات ومحتوى نصي</small></span></label>
+                <label><input type="checkbox" value="whatsapp"><span>WhatsApp<small>قنوات ورسائل ومجتمعات</small></span></label>
+                <label><input type="checkbox" value="telegram"><span>Telegram<small>قنوات ومحتوى مباشر</small></span></label>
+                <label><input type="checkbox" value="pinterest"><span>Pinterest<small>بحث بصري وإلهام</small></span></label>
+                <label><input type="checkbox" value="reddit"><span>Reddit<small>مجتمعات ونقاش متخصص</small></span></label>
+                <label><input type="checkbox" value="twitch"><span>Twitch<small>بث مباشر وألعاب</small></span></label>
+                <label><input type="checkbox" value="discord"><span>Discord<small>مجتمعات وتفاعل مباشر</small></span></label>
+                <label><input type="checkbox" value="podcast"><span>Podcast<small>حلقات صوتية ورعاية</small></span></label>
+                <label><input type="checkbox" value="email"><span>Email<small>نشرات ورسائل تحويل</small></span></label>
+                <label><input type="checkbox" value="website"><span>Website / Blog<small>مقالات وصفحات هبوط</small></span></label>
+                <label><input type="checkbox" value="googleSearch"><span>Google Search<small>إعلانات بحث ونية عالية</small></span></label>
+                <label><input type="checkbox" value="display"><span>Display Ads<small>إعلانات مواقع وتطبيقات</small></span></label>
+                <label><input type="checkbox" value="sms"><span>SMS<small>رسائل قصيرة وتنبيهات</small></span></label>
+                <label><input type="checkbox" value="other"><span>غير ذلك<small>قناة أخرى مخصصة</small></span></label>
+              </div>
+              <input class="custom-choice hidden" id="platformCustom" type="text" maxlength="100" placeholder="اكتب المنصة أو القناة الأخرى">
+              <p class="selection-note" id="platformSelectionNote">تم اختيار منصة واحدة</p>
+            </fieldset>
+            <label>نبرة المحتوى<small class="field-help">اختر الطريقة التي تريدين أن تتحدث بها الحملة مع الجمهور.</small><select id="tone"><option value="friendly">ودّية وقريبة</option><option value="bold">جريئة وحماسية</option><option value="professional">احترافية وموثوقة</option><option value="inspiring">ملهمة وعاطفية</option><option value="luxury">فاخرة وراقية</option><option value="fun">مرحة وسريعة</option><option value="educational">تعليمية ومبسطة</option><option value="empathetic">إنسانية ومتعاطفة</option><option value="urgent">عاجلة ومحفزة</option><option value="youthful">شبابية وعفوية</option><option value="formal">رسمية ومؤسسية</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="toneCustom" type="text" maxlength="80" placeholder="اكتب نبرة المحتوى المطلوبة"></label>
+            <label>كثافة النشر<small class="field-help">اختر عدد القطع الذي يستطيع الفريق إنتاجه بجودة واستمرارية.</small><select id="frequency"><option value="light">خفيفة — 3 قطع أسبوعيًا</option><option value="balanced" selected>متوازنة — 5 قطع أسبوعيًا</option><option value="intensive">مكثفة — يوميًا</option><option value="campaignBursts">دفعات مركزة حول مواعيد محددة</option><option value="weekdays">أيام العمل فقط</option><option value="weekends">نهاية الأسبوع فقط</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="frequencyCustom" type="text" maxlength="80" placeholder="اكتب كثافة النشر المناسبة"></label>
+            <label>الميزانية الإعلانية<small class="field-help">تشمل ميزانية ترويج المحتوى المدفوع، ولا تشمل بالضرورة تكلفة الإنتاج.</small><select id="budget"><option value="organic">بدون إعلانات — عضوي فقط</option><option value="small">منخفضة — 500 إلى 2,000 ر.س</option><option value="medium">متوسطة — 2,000 إلى 10,000 ر.س</option><option value="large">مرتفعة — أكثر من 10,000 ر.س</option><option value="enterprise">كبيرة — أكثر من 50,000 ر.س</option><option value="custom">ميزانية مخصصة</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="budgetCustom" type="text" maxlength="100" placeholder="اكتب الميزانية أو طريقة التمويل"></label>
+            <label>الميزانية الإجمالية للحملة<small class="field-help">تشمل الإنتاج، التصميم، التصوير، المؤثرين والإعلانات.</small><select id="totalBudget"><option value="unknown">غير محددة بعد</option><option value="micro">أقل من 2,000 ر.س</option><option value="small">2,000–10,000 ر.س</option><option value="medium">10,000–50,000 ر.س</option><option value="large">50,000–200,000 ر.س</option><option value="enterprise">أكثر من 200,000 ر.س</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="totalBudgetCustom" type="text" placeholder="اكتب الميزانية"></label>
+            <label>حجم فريق التنفيذ<small class="field-help">حتى يقترح الموقع حجم محتوى واقعيًا.</small><select id="teamSize"><option value="solo">شخص واحد</option><option value="small">2–4 أشخاص</option><option value="medium">5–10 أشخاص</option><option value="large">أكثر من 10</option><option value="agency">وكالة خارجية</option><option value="mixed">فريق داخلي + موردون</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="teamSizeCustom" type="text" placeholder="اكتب حجم الفريق"></label>
+            <label>الأصول المتاحة<small class="field-help">حدّد ما هو جاهز قبل بدء الإنتاج.</small><select id="availableAssets"><option value="none">لا توجد أصول جاهزة</option><option value="brand">هوية ودليل علامة</option><option value="photo">صور احترافية</option><option value="video">فيديوهات ومقاطع</option><option value="copy">نصوص ومعلومات معتمدة</option><option value="testimonials">شهادات وتجارب عملاء</option><option value="data">بيانات وتقارير</option><option value="all">معظم الأصول جاهزة</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="availableAssetsCustom" type="text" placeholder="اكتب الأصول المتاحة"></label>
+            <label>وجهة الإجراء بعد النقر<small class="field-help">إلى أين سينتقل الجمهور بعد CTA؟</small><select id="destination"><option value="website">موقع أو صفحة هبوط</option><option value="store">متجر إلكتروني</option><option value="appStore">متجر تطبيقات</option><option value="form">نموذج تسجيل</option><option value="whatsapp">واتساب</option><option value="dm">رسائل خاصة</option><option value="phone">اتصال هاتفي</option><option value="branch">زيارة فرع أو موقع</option><option value="eventPage">صفحة فعالية أو تذاكر</option><option value="none">لا يوجد رابط — الهدف وعي فقط</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="destinationCustom" type="text" placeholder="اكتب وجهة الإجراء"></label>
+            <label>طريقة تتبع النتائج<small class="field-help">اختر أدوات القياس المتاحة لديك.</small><select id="trackingSetup"><option value="platform">إحصاءات المنصات فقط</option><option value="utm">روابط UTM</option><option value="ga4">Google Analytics 4</option><option value="pixel">Meta / TikTok Pixel</option><option value="crm">CRM أو نظام مبيعات</option><option value="promoCode">كود خصم أو رمز مخصص</option><option value="survey">استبيان بعد الحملة</option><option value="mixed">أكثر من أداة</option><option value="none">لا يوجد تتبع بعد</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="trackingSetupCustom" type="text" placeholder="اكتب طريقة التتبع"></label>
+            <label>مسار الموافقة على المحتوى<small class="field-help">كلما زادت الموافقات احتجت وقتًا أطول في الجدول.</small><select id="approvalFlow"><option value="one">شخص واحد</option><option value="team">فريق التسويق</option><option value="management">إدارة أو مدير تنفيذي</option><option value="legal">مراجعة قانونية أو تنظيمية</option><option value="multiple">عدة جهات ومراحل</option><option value="none">لا توجد موافقات رسمية</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="approvalFlowCustom" type="text" placeholder="اكتب مسار الموافقة"></label>
+            <label>هل توجد متطلبات قانونية أو حساسة؟<small class="field-help">مثل موافقات، حقوق صور، خصوصية، إفصاح إعلاني أو قيود قطاعية.</small><select id="compliance"><option value="none">لا توجد متطلبات خاصة</option><option value="privacy">خصوصية وبيانات شخصية</option><option value="children">محتوى يتعلق بالأطفال</option><option value="health">ادعاءات صحية</option><option value="finance">ادعاءات مالية أو استثمارية</option><option value="government">اعتماد جهة رسمية</option><option value="copyright">حقوق صور وموسيقى</option><option value="influencer">إفصاح إعلاني للمؤثرين</option><option value="multiple">أكثر من متطلب</option><option value="other">غير ذلك</option></select><input class="custom-choice hidden" id="complianceCustom" type="text" placeholder="اكتب المتطلبات"></label>
+            <label class="wide">المخرجات المطلوبة من الحملة<small class="field-help">اكتب ما تتوقعين استلامه أو تنفيذه: عدد فيديوهات، تصاميم، صفحة هبوط، تقرير...</small><textarea id="deliverables" rows="3" maxlength="450" placeholder="مثال: 8 فيديوهات قصيرة، 12 تصميمًا، صفحة هبوط، تقرير أسبوعي وتقرير ختامي"></textarea></label>
+            <label class="wide">المواعيد أو القيود المهمة<small class="field-help">مثل تاريخ إطلاق ثابت، مناسبة، نفاد عرض، أيام تصوير أو وقت موافقات.</small><textarea id="constraints" rows="3" maxlength="400" placeholder="مثال: يجب الإطلاق قبل 15 أغسطس، والمحتوى يحتاج موافقة قبل 3 أيام"></textarea></label>
+          </div>
+        </div>
+
+
+
+        <div class="form-section success-goals-section">
+          <div class="form-section-title"><span>05</span><div><h3>أهداف الحملة ومعايير النجاح</h3><p>بعد تحديد القنوات والمنصات، حدّد الأرقام التي ستُقاس بها الحملة حتى يكون الحكم على النجاح موضوعيًا.</p></div></div>
+          <div class="success-intro"><strong>كيف أضع الأهداف؟</strong><p>ابدئي أولاً بتحديد المنصات والقنوات في القسم السابق، ثم عيّني المؤشرات الأساسية للحملة وبعدها أرقام كل منصة بشكل منفصل حتى لا تختلط عليك الأهداف.</p></div>
+          <div class="target-layout">
+            <section class="target-group-card">
+              <div class="target-group-head">
+                <div>
+                  <h4>المؤشرات الأساسية للحملة</h4>
+                  <p>هذه أهم مؤشرات النجاح على مستوى الحملة ككل، بغض النظر عن تفاصيل كل منصة.</p>
+                </div>
+                <span class="mini-badge">ابدئي هنا</span>
+              </div>
+              <div id="goalTargetHint" class="goal-target-hint"></div>
+              <div class="target-grid core-target-grid">
+                <label class="target-card" data-general-metric="impressions">مرات الظهور المستهدفة<small>إجمالي مرات عرض المحتوى أو الإعلان.</small><input id="planTargetImpressions" type="number" min="0" step="1" placeholder="مثال: 150000"></label>
+                <label class="target-card" data-general-metric="reach">الوصول المستهدف <span class="required-mark">مهم</span><small>عدد الأشخاص الفريدين المطلوب الوصول إليهم.</small><input id="planTargetReach" type="number" min="0" step="1" placeholder="مثال: 60000"></label>
+                <label class="target-card" data-general-metric="views">المشاهدات المستهدفة<small>مهم للفيديو والبث والمحتوى المرئي.</small><input id="planTargetViews" type="number" min="0" step="1" placeholder="مثال: 30000"></label>
+                <label class="target-card" data-general-metric="clicks">النقرات المستهدفة<small>عدد الزيارات المطلوبة للرابط أو صفحة الهبوط.</small><input id="planTargetClicks" type="number" min="0" step="1" placeholder="مثال: 1800"></label>
+                <label class="target-card" data-general-metric="conversions">الإجراءات أو التحويلات المستهدفة <span class="required-mark">مهم</span><small>شراء، تسجيل، تحميل، حجز، تبرع أو أي إجراء نهائي.</small><input id="planTargetConversions" type="number" min="0" step="1" placeholder="مثال: 120"></label>
+                <label class="target-card" data-general-metric="registrations">التسجيلات أو العملاء المحتملون<small>استمارات، حجوزات، طلبات تواصل أو تسجيل حضور.</small><input id="planTargetRegistrations" type="number" min="0" step="1" placeholder="مثال: 300"></label>
+                <label class="target-card" data-general-metric="revenue">الإيراد أو قيمة المبيعات المستهدفة (ر.س)<small>استخدمه فقط إذا كان هدف الحملة ماليًا.</small><input id="planTargetRevenue" type="number" min="0" step="0.01" placeholder="مثال: 50000"></label>
+                <label class="target-card" data-general-metric="ctr">CTR المستهدف %<small>النقرات ÷ الوصول أو مرات الظهور.</small><input id="planTargetCtr" type="number" min="0" step="0.01" placeholder="مثال: 1.5"></label>
+                <label class="target-card" data-general-metric="conversionRate">معدل التحويل المستهدف %<small>الإجراءات المكتملة ÷ النقرات.</small><input id="planTargetConversion" type="number" min="0" step="0.01" placeholder="مثال: 4"></label>
+              </div>
+            </section>
+
+            <section class="target-group-card">
+              <div class="target-group-head">
+                <div>
+                  <h4>مؤشرات خاصة بكل منصة</h4>
+                  <p>بعد اختيار المنصات في قسم «القنوات والتنفيذ»، ستظهر هنا فقط المؤشرات المناسبة لكل منصة مثل المشاهدات، الإعجابات، الحفظ، النقرات أو التسجيلات.</p>
+                </div>
+                <span class="mini-badge alt">ديناميكي</span>
+              </div>
+              <div id="selectedPlatformsMetrics" class="platform-metrics-stack">
+                <div class="platform-metrics-empty">اختر منصة أو أكثر من قسم القنوات، ثم عيّني أرقام النجاح المناسبة لكل منصة بشكل منفصل.</div>
+              </div>
+              <input id="platformMetricsData" type="hidden" value="{}">
+            </section>
+
+            <details class="advanced-targets">
+              <summary>مؤشرات إضافية اختيارية للحملات المتقدمة</summary>
+              <div class="target-grid advanced-grid">
+                <label class="target-card" data-general-metric="followers">متابعون جدد مستهدفون<small>استخدمه عندما يكون نمو المجتمع هدفًا.</small><input id="planTargetFollowers" type="number" min="0" step="1" placeholder="مثال: 1000"></label>
+                <label class="target-card" data-general-metric="downloads">تحميلات التطبيق المستهدفة<small>يظهر أثر الحملة على اكتساب مستخدمين.</small><input id="planTargetDownloads" type="number" min="0" step="1" placeholder="مثال: 500"></label>
+                <label class="target-card" data-general-metric="engagementRate">معدل التفاعل المستهدف %<small>(إعجابات + تعليقات + مشاركات + حفظ) ÷ الوصول.</small><input id="planTargetEngagement" type="number" min="0" step="0.01" placeholder="مثال: 5"></label>
+                <label class="target-card" data-general-metric="viewRate">معدل المشاهدة المستهدف %<small>المشاهدات ÷ مرات الظهور أو الوصول.</small><input id="planTargetViewRate" type="number" min="0" step="0.01" placeholder="مثال: 35"></label>
+              </div>
+            </details>
+          </div>
+          <label class="wide">ملاحظات على أهداف القياس<small class="field-help">اكتب مصدر الأرقام أو القيود، مثل نتائج حملة سابقة أو حد الميزانية أو فترة التسجيل.</small><textarea id="measurementNotes" rows="3" maxlength="400" placeholder="مثال: الهدف مبني على متوسط آخر 3 حملات مع زيادة 15%"></textarea></label>
+        </div>
+
+
+        <button class="generate-btn" type="submit"><span>إنشاء الخطة المتكاملة</span><b>Generate Strategy ↗</b></button>
+      </form>
+
+      <section id="results" class="results hidden" aria-live="polite">
+        <div class="results-toolbar">
+          <div><span class="live-dot"></span><b>الخطة جاهزة للتنفيذ</b></div>
+          <div class="plan-actions"><select id="campaignStatus" aria-label="حالة الحملة"><option value="draft">مسودة</option><option value="active">قيد التنفيذ</option><option value="completed">مكتملة</option><option value="archived">مؤرشفة</option></select><button id="saveCampaign" type="button">حفظ الحملة</button><button id="editPlan" type="button">تعديل البيانات ↑</button><button id="copyPlan" type="button">نسخ الخطة</button><button id="printPlan" type="button">حفظ PDF / طباعة</button></div>
+        </div>
+
+        <div class="accordion-controls" aria-label="التحكم بأقسام الخطة">
+          <div class="accordion-controls-copy"><span class="accordion-controls-kicker">RESULTS NAVIGATION</span><strong>تنقّل في الخطة بسهولة</strong><p>افتحي القسم الذي تريدينه فقط، أو اعرضي جميع الأقسام مرة واحدة عند المراجعة النهائية.</p></div>
+          <div class="accordion-controls-actions"><button id="expandAllSections" type="button">فتح الكل</button><button id="collapseAllSections" type="button">إغلاق الكل</button></div>
+        </div>
+
+        <section class="campaign-cover" id="campaignCover"><div><p id="coverMeta"></p><h2 id="coverTitle"></h2><p id="coverPromise"></p></div><span id="coverPlatform"></span></section>
+
+        <div class="results-accordion-stack">
+          <section class="results-accordion active" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="true">
+              <div class="accordion-title-wrap"><span class="accordion-step">01</span><span class="accordion-badge icon-summary" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v4"></path><path d="M12 16v4"></path><path d="M4 12h4"></path><path d="M16 12h4"></path><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2.5"></circle></svg></span><div><h3>ملخص الحملة</h3><p>الأهداف، الرسالة، القيمة، وملخص النجاح المتوقع.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel">
+              <div class="output-grid summary-grid">
+                <article class="output-card compact-output"><span class="card-kicker">CAMPAIGN OBJECTIVE</span><h3>الهدف الذكي</h3><p id="smartObjective"></p></article>
+                <article class="output-card"><span class="card-kicker">CORE MESSAGE</span><h3>الرسالة الرئيسية</h3><p id="coreMessage"></p></article>
+                <article class="output-card"><span class="card-kicker">VALUE PROPOSITION</span><h3>القيمة المقدمة</h3><p id="valueProposition"></p></article>
+                <article class="output-card"><span class="card-kicker">PRIMARY CTA</span><h3>الدعوة لاتخاذ إجراء</h3><p id="primaryCta"></p></article>
+                <article class="output-card full"><span class="card-kicker">SUCCESS TARGETS</span><h3>أهداف النجاح الرقمية</h3><div id="targetSummary" class="target-summary"></div></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">02</span><span class="accordion-badge icon-audience" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 19v-1a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v1"></path><circle cx="10" cy="7" r="3"></circle><path d="M20 19v-1a3.5 3.5 0 0 0-2.6-3.4"></path><path d="M15.5 4.8a3 3 0 0 1 0 4.4"></path></svg></span><div><h3>الجمهور والمنصات</h3><p>قراءة سريعة للجمهور المستهدف وكيفية التعامل مع كل منصة.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <div class="output-grid two-col">
+                <article class="output-card"><span class="card-kicker">AUDIENCE PERSONA</span><h3>تحليل الجمهور المستهدف</h3><div id="audienceAnalysis" class="bullet-output"></div></article>
+                <article class="output-card"><span class="card-kicker">PLATFORM STRATEGY</span><h3>استراتيجية المنصة</h3><div id="platformStrategy" class="bullet-output"></div></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">03</span><span class="accordion-badge icon-content" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8L12 3Z"></path><path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14Z"></path><path d="M5 14l.7 1.6L7.3 16 5.7 16.7 5 18.3l-.7-1.6L2.7 16l1.6-.4L5 14Z"></path></svg></span><div><h3>المحتوى والهوية</h3><p>أعمدة المحتوى، التوجه البصري، ومزيج الهاشتاقات.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <article class="output-card full"><span class="card-kicker">CONTENT PILLARS</span><h3>أعمدة المحتوى</h3><div id="contentPillars" class="pillars"></div></article>
+              <div class="output-grid two-col compact-section-grid">
+                <article class="output-card compact-output"><span class="card-kicker">HASHTAG MIX</span><h3>مزيج الهاشتاقات</h3><div id="hashtagsOutput" class="hashtags"></div></article>
+                <article class="output-card"><span class="card-kicker">VISUAL DIRECTION</span><h3>التوجه البصري</h3><div id="visualDirection" class="bullet-output"></div></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">04</span><span class="accordion-badge icon-calendar" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M3 10h18"></path><path d="M8 14h3"></path><path d="M13 14h3"></path><path d="M8 18h3"></path></svg></span><div><h3>جدول النشر</h3><p>خطة نشر جاهزة للتنفيذ مع نوع المحتوى، الكابشن، وCTA.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <article class="output-card full schedule-card"><div class="card-head"><div><span class="card-kicker">PUBLISHING PLAN</span><h3>جدول النشر المقترح</h3></div><p id="scheduleNote"></p></div><div class="table-wrap"><table><thead><tr><th>اليوم والوقت</th><th>نوع المحتوى</th><th>الفكرة والتنفيذ</th><th>الكابشن المقترح</th><th>CTA</th></tr></thead><tbody id="scheduleBody"></tbody></table></div></article>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">05</span><span class="accordion-badge icon-kpi" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"></path><path d="M7 20V10"></path><path d="M12 20V6"></path><path d="M17 20v-8"></path></svg></span><div><h3>القياس والتحسين</h3><p>مؤشرات الأداء، معايير النجاح، وخطوات التحسين المقترحة.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <div class="output-grid two-col">
+                <article class="output-card"><span class="card-kicker">MEASUREMENT</span><h3>مؤشرات الأداء KPIs</h3><div id="kpiOutput" class="metric-list"></div></article>
+                <article class="output-card"><span class="card-kicker">OPTIMIZATION</span><h3>خطة التحسين</h3><div id="optimizationOutput" class="bullet-output"></div></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">06</span><span class="accordion-badge icon-paid" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"></rect><path d="M12 9.2c-1.4 0-2.5.8-2.5 1.9S10.6 13 12 13s2.5.8 2.5 1.9-1.1 1.9-2.5 1.9-2.5-.8-2.5-1.9"></path><path d="M12 8v1.2"></path><path d="M12 16.8V18"></path></svg></span><div><h3>الإعلانات المدفوعة</h3><p>متى نستخدم الترويج المدفوع، وعلى أي منصات، وبأي توزيع.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <article id="paidSection" class="output-card full"><span class="card-kicker">PAID MEDIA</span><h3>خطة الإعلانات المدفوعة</h3><div id="paidStrategy" class="bullet-output"></div></article>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">07</span><span class="accordion-badge icon-performance" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"></path><path d="M6 16l4-4 3 3 5-6"></path><path d="M18 9h2v2"></path></svg></span><div><h3>نتائج الحملة الفعلية</h3><p>إدخال النتائج بعد التنفيذ لمقارنة الأداء بالخطة وتحليل النجاح.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <section class="campaign-analytics output-card full" id="campaignAnalytics">
+                <div class="card-head analytics-heading"><div><span class="card-kicker">CAMPAIGN PERFORMANCE</span><h3>قياس نتائج الحملة وتحليل نجاحها</h3><p>أدخلي النتائج الفعلية من المنصة، وسيحسب النظام المؤشرات ويقترح تحسينات عملية للخطة.</p></div><button id="saveAnalytics" type="button">حفظ وتحليل النتائج</button></div>
+                <div class="analytics-inputs">
+                  <label>مرات الظهور<input id="metricImpressions" type="number" min="0" step="1" placeholder="مثال: 150000"></label>
+                  <label>الوصول<input id="metricReach" type="number" min="0" step="1" placeholder="مثال: 90000"></label>
+                  <label>المشاهدات<input id="metricViews" type="number" min="0" step="1" placeholder="مثال: 65000"></label>
+                  <label>الإعجابات<input id="metricLikes" type="number" min="0" step="1" placeholder="مثال: 4200"></label>
+                  <label>التعليقات<input id="metricComments" type="number" min="0" step="1" placeholder="مثال: 380"></label>
+                  <label>المشاركات<input id="metricShares" type="number" min="0" step="1" placeholder="مثال: 740"></label>
+                  <label>مرات الحفظ<input id="metricSaves" type="number" min="0" step="1" placeholder="مثال: 920"></label>
+                  <label>النقرات<input id="metricClicks" type="number" min="0" step="1" placeholder="مثال: 2100"></label>
+                  <label>الإجراءات المكتملة<input id="metricConversions" type="number" min="0" step="1" placeholder="شراء، تسجيل، تحميل..."></label>
+                  <label>متابعون جدد<input id="metricFollowers" type="number" min="0" step="1" placeholder="مثال: 850"></label><label>تحميلات التطبيق<input id="metricDownloads" type="number" min="0" step="1" placeholder="مثال: 420"></label><label>تسجيلات أو عملاء محتملون<input id="metricRegistrations" type="number" min="0" step="1" placeholder="مثال: 180"></label><label>الإيراد المحقق (ر.س)<input id="metricRevenue" type="number" min="0" step="0.01" placeholder="مثال: 32000"></label><label>الميزانية المصروفة (ر.س)<input id="metricSpend" type="number" min="0" step="0.01" placeholder="مثال: 2500"></label>
+                </div>
+                <div class="analytics-targets">
+                  <div class="targets-copy"><strong>أهداف القياس قبل الحكم</strong><span>ضعي النسب المستهدفة التي اعتمدتِها للحملة. لن يصف النظام الحملة بأنها ناجحة من دون هدف واضح وبيانات كافية.</span></div>
+                  <label>التفاعل المستهدف %<input id="targetEngagement" type="number" min="0" step="0.01" placeholder="مثال: 5"></label>
+                  <label>المشاهدة المستهدفة %<input id="targetViewRate" type="number" min="0" step="0.01" placeholder="مثال: 40"></label>
+                  <label>CTR المستهدف %<input id="targetCtr" type="number" min="0" step="0.01" placeholder="مثال: 1.5"></label>
+                  <label>التحويل المستهدف %<input id="targetConversion" type="number" min="0" step="0.01" placeholder="مثال: 3"></label>
+                  <details class="analytics-extra-targets"><summary>أهداف رقمية إضافية للمقارنة</summary><div>
+                    <label>الوصول<input id="targetReachCount" type="number" min="0"></label><label>المشاهدات<input id="targetViewsCount" type="number" min="0"></label><label>الإعجابات<input id="targetLikesCount" type="number" min="0"></label><label>التعليقات<input id="targetCommentsCount" type="number" min="0"></label><label>المشاركات<input id="targetSharesCount" type="number" min="0"></label><label>الحفظ<input id="targetSavesCount" type="number" min="0"></label><label>النقرات<input id="targetClicksCount" type="number" min="0"></label><label>الإجراءات<input id="targetConversionsCount" type="number" min="0"></label><label>متابعون جدد<input id="targetFollowersCount" type="number" min="0"></label><label>تحميلات<input id="targetDownloadsCount" type="number" min="0"></label><label>تسجيلات<input id="targetRegistrationsCount" type="number" min="0"></label><label>الإيراد<input id="targetRevenueCount" type="number" min="0"></label>
+                  </div></details>
+                </div>
+                <div id="analyticsValidation" class="analytics-validation hidden"></div>
+                <div id="analyticsEmpty" class="analytics-empty">أضيفي النتائج الفعلية والأهداف المستهدفة ثم اضغطي «حفظ وتحليل النتائج». الحكم يعتمد على النسب الفعلية مقارنةً بأهدافك، وليس على أرقام افتراضية.</div>
+                <div id="analyticsResults" class="analytics-results hidden">
+                  <div class="analytics-score-card"><div class="score-ring" id="successRing"><div><strong id="successScore">—</strong><span>الحكم النهائي</span></div></div><div><span class="score-label" id="successLabel">بانتظار البيانات</span><h4 id="successHeadline"></h4><p id="successSummary"></p></div></div>
+                  <div id="derivedMetrics" class="derived-metrics"></div>
+                  <div class="analytics-charts">
+                    <article><div class="chart-title"><h4>أداء مؤشرات الحملة</h4><span>قيم فعلية</span></div><div id="performanceBars" class="performance-bars"></div></article>
+                    <article><div class="chart-title"><h4>توزيع التفاعل</h4><span>إجمالي التفاعلات</span></div><div class="engagement-chart-wrap"><div id="engagementDonut" class="donut-chart engagement-donut"><div class="donut-center"><b id="engagementTotal">0</b><span>تفاعل</span></div></div><div id="engagementLegend" class="donut-legend"></div></div></article>
+                  </div>
+                  <article class="analysis-recommendations"><div class="card-head"><div><span class="card-kicker">DATA-DRIVEN OPTIMIZATION</span><h4>تحسينات مقترحة بناءً على النتائج</h4></div></div><div id="analyticsRecommendations" class="bullet-output"></div></article>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="results-accordion" data-accordion-item>
+            <button class="accordion-toggle" type="button" aria-expanded="false">
+              <div class="accordion-title-wrap"><span class="accordion-step">08</span><span class="accordion-badge icon-checklist" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></span><div><h3>قائمة التنفيذ</h3><p>مراجعة نهائية قبل الإطلاق حتى لا يفوتك أي عنصر أساسي.</p></div></div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <article class="output-card full"><div class="card-head"><div><span class="card-kicker">FINAL CHECKLIST</span><h3>قائمة التنفيذ قبل الإطلاق</h3></div><p id="checklistProgress">0% مكتمل</p></div><div id="checklistOutput" class="checklist"></div></article>
+            </div>
+          </section>
+        </div>
+      </section>
+      <button id="backToForm" class="back-to-form" type="button" aria-label="العودة إلى بيانات الحملة">تعديل بيانات الحملة <span>↑</span></button>
+    </section>
+
+    <section id="about" class="about section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">PROJECT VALUE</p><h2>مشروع إعلام رقمي متكامل</h2><p>يجمع بين استراتيجية المحتوى، فهم سلوك الجمهور، تصميم تجربة المستخدم، الكتابة الإعلانية، وتحليل مؤشرات الأداء داخل أداة ويب واحدة.</p></div>
+      <div class="about-grid"><article><b>01</b><h3>التفكير الاستراتيجي</h3><p>يربط هدف الحملة بالجمهور، القناة، الرسالة، ومرحلة مسار التحويل.</p></article><article><b>02</b><h3>تخطيط المحتوى</h3><p>ينشئ أفكارًا قابلة للتصوير والنشر مع صيغة ووقت وكابشن وCTA.</p></article><article><b>03</b><h3>التحليلات الرقمية</h3><p>يقترح مؤشرات قياس وخطة تحسين بدل الاكتفاء بالأفكار الإبداعية.</p></article></div>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap"><p>CampaignCraft — Digital Media Portfolio Project</p><p>Designed &amp; developed by <strong>Dana Baaljahr</strong> · Strategy • Content • Analytics</p></footer>
+  <div id="saveToast" class="save-toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="i18n-v3.js?v=20260627-3"></script>
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+  <script src="analytics.js"></script>
+  <script src="mobile-menu.js"></script>
+</body>
+</html>
