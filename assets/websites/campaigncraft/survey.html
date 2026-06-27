@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>استبيان | CampaignCraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body class="public-survey-page">
+  <div class="noise"></div>
+  <main class="public-survey-shell">
+    <header class="public-brand"><div class="public-brand-name"><span class="brand-mark">CC</span><span>CampaignCraft Survey</span></div>
+      <div class="theme-switcher compact" role="group" aria-label="اختيار المظهر">
+        <button type="button" class="theme-choice" data-theme-choice="dark" aria-pressed="false">⚫ داكن</button>
+        <button type="button" class="theme-choice" data-theme-choice="light" aria-pressed="false">⚪ فاتح</button>
+      </div></header>
+    <section id="surveyInvalid" class="public-card hidden"><h1>الرابط غير صالح</h1><p>لم نتمكن من قراءة بيانات الاستبيان. اطلبي رابطًا جديدًا من صاحب الاستبيان.</p></section>
+    <section id="surveyFormCard" class="public-card hidden">
+      <div class="public-progress"><span id="progressText">0%</span><i><b id="progressBar"></b></i></div>
+      <p class="eyebrow">AUDIENCE SURVEY</p>
+      <h1 id="publicTitle"></h1><p id="publicDescription" class="public-description"></p>
+      <form id="publicSurveyForm"><div id="publicQuestions"></div><button class="primary-btn public-submit" type="submit">إرسال الإجابة</button></form>
+      <p class="privacy-note">لا يطلب هذا الاستبيان اسمك أو بريدك، وتُستخدم الإجابات لغرض تحسين الحملة فقط.</p>
+    </section>
+    <section id="surveyThanks" class="public-card public-thanks hidden">
+      <span class="thanks-icon">✓</span><h1>شكرًا لمشاركتك</h1><p id="thanksMessage">تم حفظ إجابتك بنجاح.</p>
+      <button id="downloadResponse" class="primary-btn hidden" type="button">تنزيل نسخة احتياطية من الإجابة</button>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="survey-public.js?v=20260627-4"></script>
+</body>
+</html>
